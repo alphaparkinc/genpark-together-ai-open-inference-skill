@@ -1,0 +1,37 @@
+{
+  "name": "genpark-together-ai-open-inference-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Together AI-inspired open-source model inference and fine-tuning platform.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "together-ai",
+    "open-source",
+    "inference",
+    "fine-tuning"
+  ],
+  "inputs": {
+    "model_name": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "output": {
+      "type": "string"
+    },
+    "latency_ms": {
+      "type": "integer"
+    },
+    "price_per_1m": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
